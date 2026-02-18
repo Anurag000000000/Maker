@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money maker Prediction </title>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1243159277259827');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1243159277259827&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <title>Money maker Prediction</title>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1243159277259827');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1243159277259827&ev=PageView&noscript=1"
+    /></noscript>
     <style>
-        /* Background aur Body setup */
         body {
-            background-color: #2c1f26; /* Dark brownish background */
+            background-color: #2c1f26;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,19 +31,17 @@ src="https://www.facebook.com/tr?id=1243159277259827&ev=PageView&noscript=1"
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        /* Main Card Container */
         .card {
-            background-color: #4a3b44; /* Inner card color */
+            background-color: #4a3b44;
             width: 350px;
             padding: 40px 20px;
             border-radius: 30px;
             text-align: center;
-            border: 2px solid #00d4ff; /* Neon blue border */
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.4); /* Glow effect */
+            border: 2px solid #00d4ff;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
             color: white;
         }
 
-        /* Profile Image Setup */
         .profile-img {
             width: 180px;
             height: 180px;
@@ -55,22 +51,22 @@ src="https://www.facebook.com/tr?id=1243159277259827&ev=PageView&noscript=1"
             margin-bottom: 20px;
         }
 
-        /* Headings */
         h2 {
-            color: #5da9ff; /* Light blue text */
-            font-size: 24px;
+            color: #5da9ff;
+            font-size: 22px;
             margin-bottom: 10px;
             line-height: 1.2;
+            text-transform: uppercase;
         }
 
         .subtitle {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: bold;
             margin-bottom: 25px;
             letter-spacing: 1px;
+            color: #eee;
         }
 
-        /* Stats Section */
         .stats {
             text-align: left;
             display: inline-block;
@@ -84,61 +80,31 @@ src="https://www.facebook.com/tr?id=1243159277259827&ev=PageView&noscript=1"
             margin-bottom: 10px;
         }
 
-        /* Gradient Button */
+        @keyframes pulse-animation {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(156, 39, 176, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(156, 39, 176, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(156, 39, 176, 0); }
+        }
+
         .btn {
             display: block;
             background: linear-gradient(to right, #4e34e1, #9c27b0);
             color: white;
             text-decoration: none;
-            padding: 15px 30px;
+            padding: 15px 20px;
             border-radius: 50px;
             font-weight: bold;
             font-size: 18px;
-            transition: transform 0.2s;
+            border: none;
+            cursor: pointer;
+            animation: pulse-animation 1.5s infinite;
+            transition: all 0.3s ease;
         }
 
         .btn:hover {
-            transform: scale(1.05);
+            filter: brightness(1.2);
+            animation-play-state: paused;
         }
-   /* Naya Pulsing Animation */
-@keyframes pulse-animation {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(156, 39, 176, 0.7);
-    }
-    70% {
-        transform: scale(1.05); /* Thoda bada hoga */
-        box-shadow: 0 0 0 15px rgba(156, 39, 176, 0);
-    }
-    100% {
-        transform: scale(1); /* Wapas normal size */
-        box-shadow: 0 0 0 0 rgba(156, 39, 176, 0);
-    }
-}
-
-/* Button me animation lagana */
-.btn {
-    display: block;
-    background: linear-gradient(to right, #4e34e1, #9c27b0);
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    
-    /* Animation settings */
-    animation: pulse-animation 1.5s infinite; /* 1.5 second me loop hoga */
-    transition: all 0.3s ease;
-}
-
-/* Hover karne par thoda aur effect */
-.btn:hover {
-    filter: brightness(1.2);
-    animation-play-state: paused; /* Mouse le jane par animation ruk jayega */
-}
     </style>
 </head>
 <body>
@@ -153,18 +119,20 @@ src="https://www.facebook.com/tr?id=1243159277259827&ev=PageView&noscript=1"
         <div class="stats">
             <div>🌈 98% SIGNAL ACCURACY</div>
             <div>📊 10K+ ACTIVE MEMBERS</div>
-            <div>⚡ DAILY BIG SMALL UPDATES</div>
+            <div>⚡️ DAILY BIG SMALL UPDATES</div>
         </div>
-<a href="https://t.me/+Ay_L94MxoydlN2I9" id="subscribe-btn" class="btn">JOIN FREE TELEGRAM</a>
-        <a href="https://t.me/+Ay_L94MxoydlN2I9" class="btn-telegram" onclick="trackSubscribe()">JOIN FREE TELEGRAM</a>
-  </div>
-<script>
-        // Button click track karne ke liye
+
+        <a href="https://t.me/+Ay_L94Mxoyd1N2I9" id="subscribe-btn" class="btn">JOIN FREE TELEGRAM</a>
+    </div>
+
+    <script>
         document.getElementById('subscribe-btn').addEventListener('click', function() {
             console.log("Tracking: User ne Telegram join par click kiya!");
-            // Aap chahein toh yahan alert bhi daal sakte hain test karne ke liye
-            // alert("Tracking successful!"); 
+            // Meta Pixel Lead Event (Optional)
+            if(typeof fbq !== 'undefined') {
+                fbq('track', 'Lead');
+            }
         });
     </script>
-</body>
+    </body>
 </html>
