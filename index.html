@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money maker Prediction</title>
+    <title>Money Maker Prediction</title>
 
     <script>
     !function(f,b,e,v,n,t,s)
@@ -21,8 +21,9 @@
     src="https://www.facebook.com/tr?id=1243159277259827&ev=PageView&noscript=1"
     /></noscript>
     <style>
+        /* Background setup */
         body {
-            background-color: #2c1f26;
+            background-color: #2c1f26; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -31,6 +32,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        /* Card Container */
         .card {
             background-color: #4a3b44;
             width: 350px;
@@ -42,6 +44,7 @@
             color: white;
         }
 
+        /* Profile Image */
         .profile-img {
             width: 180px;
             height: 180px;
@@ -67,6 +70,7 @@
             color: #eee;
         }
 
+        /* Stats List */
         .stats {
             text-align: left;
             display: inline-block;
@@ -80,6 +84,7 @@
             margin-bottom: 10px;
         }
 
+        /* Pulsing Button Animation */
         @keyframes pulse-animation {
             0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(156, 39, 176, 0.7); }
             70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(156, 39, 176, 0); }
@@ -127,12 +132,13 @@
 
     <script>
         document.getElementById('subscribe-btn').addEventListener('click', function() {
-            console.log("Tracking: User ne Telegram join par click kiya!");
-            // Meta Pixel Subscribe Event (Optional)
+            console.log("Tracking: Subscribe event sent to Meta Pixel!");
+            // Meta Pixel 'Subscribe' Event
             if(typeof fbq !== 'undefined') {
                 fbq('track', 'Subscribe');
             }
         });
     </script>
-    </body>
+
+</body>
 </html>
